@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi</title>
+</head>
+<body>
+
+<form  id="form"action="/" method="GET">
+        <label for="cognome">Cognome</label>
+        <input type="text" name="cognome" id="cognome" maxlength="40"><br>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" maxlength="30"><br>
+        <label for="matricola">Matricola</label>
+        <input type="text" name="matricola" id="matricola" maxlength="12"><br>
+        <label for="regione">Scgli una regione:</label>
+            <select name="regione" id="regione">
+                <option value=""></option>
+                <option value="Basilicata">Basilicata</option>
+                <option value="Calabria">Calabria</option>
+                <option value="Campania">Campania</option>
+                <option value="Emilia-Romagna">Emilia-Romagna</option>
+            </select><br>
+        <label form="email">Email:</label>
+        <input type="text" name="email" id="email"><br>
+        <label for="telefono">Telefono:</label>
+        <input type="text" name="telefono" id="telefono"maxlength="12"><br>
+        <label for="richieste">Richieste particolari:</label><br>
+        <textarea id="richieste" name="richieste" rows="12" cols="60">
+        </textarea>
+        <br>
+        
+        
+        <button type="submit">Invia</button>
+
+
+        <button type="reset">Reset</button>
+</form>
+
+<script src="master.js"></script>
+    
+</body>
+</html>
