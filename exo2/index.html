@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi</title>
+</head>
+<body>
+
+<form  id="form"action="/" method="GET">
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" maxlength="50"><br>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" maxlength="50"><br>
+        <label for="universita">Università</label>
+         <select name="università" id="universita">
+             <option value="sapienza">Sapienza</option>
+             <option value="luiss">Luiss</option>
+             <option value="romatre">Roma Tre</option>
+         </select><br>
+         <label for="studente">Studente Lavoratore</label>
+         <input type="checkbox" name="studente" id="studente" value="studente"><br>
+         
+
+         <label for="descrizione"></label>
+
+         <textarea name="descrizione" id="descrizione" cols="30" rows="10" maxlength="80"></textarea><br>
+
+
+        <button type="submit">Invia</button>
+        <button type="reset">Reset</button>
+
+</form>
+
+<script src="master.js"></script>
+    
+</body>
+</html>
