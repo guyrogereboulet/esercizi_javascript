@@ -115,35 +115,35 @@
 //   In caso di vittoria dovrà essere stampato un messaggio "Hai fatto X",
 //   in caso di perdita dovrà essere mostrato il messaggio "Mi dispiace, hai perso!".
 
-let arrayTombola = [];
-let arrayGiocatore = [5, 10, 8, 20, 64, 89, 64, 77, 22, 41];
+// let arrayTombola = [];
+// let arrayGiocatore = [5, 10, 8, 20, 64, 89, 64, 77, 22, 41];
 
-for (j = 1; j <= 10; j++) {
-  arrayTombola.push(Math.floor(Math.random() * 50));
-}
-res = arrayTombola.filter((item) => arrayGiocatore.includes(item));
-console.log(arrayTombola);
-console.log(res);
+// for (j = 1; j <= 10; j++) {
+//   arrayTombola.push(Math.floor(Math.random() * 90+1));
+// }
+// res = arrayTombola.filter((item) => arrayGiocatore.includes(item));
+// console.log(arrayTombola);
+// console.log(res);
 
-if (res.length == 2) {
-  console.log("Ambo");
-}
+// if (res.length == 2) {
+//   console.log("Ambo");
+// }
 
-if (res.length == 3) {
-  console.log("Terna");
-}
+// if (res.length == 3) {
+//   console.log("Terna");
+// }
 
-if (res.length == 4) {
-  console.log("Quaterna");
-}
+// if (res.length == 4) {
+//   console.log("Quaterna");
+// }
 
-if (res.length == 5) {
-  console.log("Cinquina");
-}
+// if (res.length == 5) {
+//   console.log("Cinquina");
+// }
 
-if (res.length == arrayGiocatore.length) {
-  console.log("Quaterna");
-}
+// if (res.length == arrayGiocatore.length) {
+//   console.log("Quaterna");
+// }
 
 //  -Scrivi un programma che stampi il tabellone delle tabelline, da 0 a 10.
 //   In questo modo:
@@ -152,22 +152,22 @@ if (res.length == arrayGiocatore.length) {
 //     1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
 //     2 | 0 | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 | 18 | 20
 
-document.write("<table border=1; cellpadding = 20>");
+// document.write("<table border=1; cellpadding = 20>");
 
-for (let k = 1; k <= 10; k++) {
-  //Creo 10 righe
-  document.write("<tr>");
+// for (let k = 1; k <= 10; k++) {
+//   //Creo 10 righe
+//   document.write("<tr>");
 
-  //Per ogni riga creo 10 celle
-  for (let j = 1; j <= 10; j++) {
-    document.write("<td>");
-    document.write(k * j);
-    document.write("</td>");
-  }
+//   //Per ogni riga creo 10 celle
+//   for (let j = 1; j <= 10; j++) {
+//     document.write("<td>");
+//     document.write(k * j);
+//     document.write("</td>");
+//   }
 
-  document.write("</tr>");
-}
+//   document.write("</tr>");
+// }
 
-document.write("</table>");
+// document.write("</table>");
 
 
