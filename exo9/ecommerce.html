@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Amazzopp</title>
+    <script src="ecommerce.js"></script>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+
+<body class="bg-dark text-white text-center">
+
+    <div class="grid_container" id="container">
+    </div>
+
+    <script>
+        getElementsFromUrl("https://fakestoreapi.com/products?limit=20");
+
+        function inserisciElemento(elemento) {
+
+            const element = document.createElement('img');
+            element.setAttribute("src", elemento.image);
+            element.setAttribute("class", "Mh-500");
+
+            getPadre().appendChild(element);
+        }
+        function getPadre() { return document.getElementById("container"); }
+    </script>
+</body>
+
+</html>

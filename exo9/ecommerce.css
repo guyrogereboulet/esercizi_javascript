@@ -1,0 +1,20 @@
+.bg-dark { background-color: #232626; }
+.text-white { color: white;}
+
+.text-center { text-align: center;}
+
+
+.t-2rem { font-size: 2rem; }
+.t-1_5rem { font-size: 1.5rem; }
+
+
+.grid_container{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #2196F3;
+    grid-gap: 50px;
+    margin: 100px;
+}
+
+.Mw-500 { max-width: 500px;}
+.Mh-500 { max-height: 500px;}

@@ -46,14 +46,13 @@ console.log(returnElement(numeri, 10, 30));
 //   Input: numero = 245
 //   Output: 3 cifre
 
-
 function countNumber(number) {
   if (number < 9999) {
     let numberString = number.toString();
 
     return numberString.length;
   } else {
-     return false;
+    return false;
   }
 }
 
@@ -64,9 +63,9 @@ console.log(countNumber(12));
 
 function compreso(int) {
   if (int >= 1 && int <= 7) {
-      return true ;
+    return true;
   } else {
-      return false;
+    return false;
   }
 }
 
@@ -82,34 +81,19 @@ console.log(compreso(6));
 //   - nel caso il giorno non sia compreso nel range, la funzione dovrà restituire un messaggio d'errore simile a questo: 'Day Not Found .'
 
 let arrayWeek = [
-    'Lunedì',
-    'Martedì',
-    'Mercoledì',
-    'Giovedì',
-    'Venerdì',
-    'Sabato',
-    'Domenica'
+  "Lunedì",
+  "Martedì",
+  "Mercoledì",
+  "Giovedì",
+  "Venerdì",
+  "Sabato",
+  "Domenica",
 ];
 
-function printWeek(){
-
-    if(console.log(compreso(6)) == true) {
-        console.log("Ciao");
-    }
-
-
-    
+function printWeek() {
+  if (console.log(compreso(6)) == true) {
+    console.log("Ciao");
+  }
 }
 
 console.log(printWeek());
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Esercizio 2 - 22/01/21</title>
+    <script src="es2.js"></script>
+</head>
+
+<h3>
+    Esercizio 2:<br>
+    A seguito di un input ricevuto dall'utente (promt) che definisce la quantità di elementi che si vuole visualizzare,
+    creare un array di dati lunga quanto specificato dall'utente, che contenga oggetti composti come segue:
+    {
+    id: Number,
+    valore: String
+    }.
+    L'id deve essere un intero progressivo generato da una funzione, come l'esercizio del 21/01 assegnata dal docente
+    Luigi, il valore deve invece essere una lettera dall'alfabeto recuperata randomicamente da un array che contiene
+    tutte le lettere dell'alfabeto.
+    Una volta creata l array di dati, stampare a video l'array e rimuovere tutti gli elementi il cui id non è presente
+    nella seguente sequenza numerica [0,1,1,2,3,5,8,13,21,34] (Seq di Fibonacci). Per controllare se un array include un
+    elemento eseguire sull'array la funzione includes().
+    Completare quindi l'esercizio stampando a video (in console js o nell'html), la collezione uscente.
+    Plus: Gli elementi non vanno salvati in un nuovo array, vanno bensì eliminati dall' array originale i valori che non
+    rispettano la condizione scritta sopra.
+</h3>
+
+<body>
+
+    <script>
+
+        const alfabeto = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'Z'];
+        const sequenzaDiFibonacci = calcolaSequenzaDiFibonacci(10);
+
+        const lunghezza = prompt("Inserisci la lunghezza massima dell insieme");
+
+        const array = creaArray(lunghezza, alfabeto);
+        const arraySpolpato = spolpaArray(array, sequenzaDiFibonacci);
+
+
+
+        console.log(JSON.stringify({
+            Fibonacci: sequenzaDiFibonacci,
+            ArrayGenerato: array,
+            ArraySpolpato: arraySpolpato
+        }));
+
+
+    </script>
+</body>
+
+</html>
