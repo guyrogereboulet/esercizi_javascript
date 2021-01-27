@@ -11,37 +11,37 @@
   
   */
 
-// let manuel = {
-//   tariffaOraria: 17.5,
-//   stipendioGiornaliero: 17.5 * 8,
-//   stipendioSettimanale: function(){
-//     return this.stipendioGiornaliero * 5;
-//   },
-//   giorniLavorativi: 20,
-//   oreLavorative: 160,
-//   settimanaLavorativa: 40,
-//   primaSettimana: function () {
-//     return (this.stipendioSettimanale()/100)* 0.85 + this.stipendioSettimanale();
-//   },
-//   secondaSettimana: function () {
-//     return (this.stipendioSettimanale() / 100) * 3.2 + this.stipendioSettimanale();
-//   },
-//   terzaSettimana: function () {
-//     return (this.stipendioSettimanale() / 100) * 3.8 + this.stipendioSettimanale();
-//   },
-//   quartaSettimana: function () {
-//     return (this.stipendioSettimanale() / 100) * 4+ this.stipendioSettimanale();
-//   },
-//   mensile: function() {
-//     return (
-//       this.primaSettimana() +
-//       this.secondaSettimana() +
-//       this.terzaSettimana() +
-//       this.quartaSettimana()
-//     );
-//   }
-// };
-// console.log(manuel.mensile());
+let manuel = {
+  tariffaOraria: 17.5,
+  stipendioGiornaliero: 17.5 * 8,
+  stipendioSettimanale: function(){
+    return this.stipendioGiornaliero * 5;
+  },
+  giorniLavorativi: 20,
+  oreLavorative: 160,
+  settimanaLavorativa: 40,
+  primaSettimana: function () {
+    return (this.stipendioSettimanale()/100)* 0.85 + this.stipendioSettimanale();
+  },
+  secondaSettimana: function () {
+    return (this.stipendioSettimanale() / 100) * 3.2 + this.stipendioSettimanale();
+  },
+  terzaSettimana: function () {
+    return (this.stipendioSettimanale() / 100) * 3.8 + this.stipendioSettimanale();
+  },
+  quartaSettimana: function () {
+    return (this.stipendioSettimanale() / 100) * 4+ this.stipendioSettimanale();
+  },
+  mensile: function() {
+    return (
+      this.primaSettimana() +
+      this.secondaSettimana() +
+      this.terzaSettimana() +
+      this.quartaSettimana()
+    );
+  }
+};
+console.log(manuel.mensile());
 
 
 

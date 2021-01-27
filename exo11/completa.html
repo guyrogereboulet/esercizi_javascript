@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Esercizio da completare - 27/01/21</title>
+    <script src="completa.js"></script>
+  </head>
+
+  <h3>
+    Esercizio da completare:<br />
+    Il file compleata.js espone delle API non ancora completate per la lettura e
+    l'inserimento di dati all'interno di una struttura dati. Il vostro compito è
+    quello di implementare le due istruzioni: Read→ Input→ ID da ricercare
+    all'interno della struttura dati. Output→ Restituire l'elemento contenente
+    quell'id, o null se non esiste. Insert→ Input→ ID e TITOLO dei valori da
+    inserire all'interno della struttura dati. Output(Facoltativo)→ Restituire
+    true se l'inserimento è andato a buon fine.
+  </h3>
+
+  <body>
+    <script>
+      const valoreLetto = read(10);
+
+      const valoreInserito = insert(101, "Prosecco");
+
+      const valoreInseritoLetto = read(101);
+
+      console.log(
+        JSON.stringify({
+          valoreLetto: valoreLetto,
+          valoreInseritoLetto: valoreInseritoLetto,
+        })
+      );
+    </script>
+  </body>
+</html>
