@@ -34,16 +34,16 @@ let arrayAuto = [
   },
 ];
 
-// for (let index = 0; index < arrayAuto.length; index++) {
-//   const element = arrayAuto[index];
-//   delete element.cavalli;
+for (let index = 0; index < arrayAuto.length; index++) {
+  const element = arrayAuto[index];
+  delete element.cavalli;
 
-//   if (element.colore == "bianco") {
-//     element.anno = "2000";
-//   }
-// }
+  if (element.colore == "bianco") {
+    element.anno = "2000";
+  }
+}
 
-// console.log(arrayAuto);
+console.log(arrayAuto);
 
 // Eliminare dall’array di oggetti precedentemente creato tutti gli oggetti con marca fiat, utilizzando un ciclo.
 
